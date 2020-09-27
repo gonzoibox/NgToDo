@@ -1,26 +1,62 @@
 <div class="todo-list">
   <div class="todo-list___header">
     <div>
-      <span class="todo-list___header--calendar">cal</span>
+      <span class="todo-list___header--calendar">
+        <svg class="icon">
+          <use xlink:href="../assets/icons/sprite.svg#icon-calendar"></use>
+        </svg>
+      </span>
       <span class="todo-list___header--name">name</span>
     </div>
     <div>
-      <span class="todo-list___header--edit">edit</span>
-      <span class="todo-list___header--delete">delete</span>
+      <span class="todo-list___header--edit">
+        <svg class="icon">
+          <use xlink:href="../assets/icons/sprite.svg#icon-pencil1"></use>
+        </svg>
+      </span>
+      <span class="todo-list___header--delete">
+        <svg class="icon">
+          <use xlink:href="../assets/icons/sprite.svg#icon-bin"></use>
+        </svg>
+      </span>
     </div>
   </div>
 
   <div class="todo-list__input">
-    <div class="todo-list__input--icon"></div>
-    <div class="todo-list__input--form">
-      <form action="#">
-        <input type="text" placeholder="Start typing here to create a task...">
-        <button type="submit">Add task</button>
-      </form>
-    </div>
+    <span class="todo-list__input--plus">
+      <svg class="icon">
+        <use xlink:href="../assets/icons/sprite.svg#icon-plus"></use>
+      </svg>
+    </span>
+    <form action="#" class="todo-list__input--form">
+      <input type="text" class="todo-list__input--form--input-todo" placeholder="Start typing here to create a task...">
+      <button type="submit" class="todo-list__input--form--add-button">Add Task</button>
+    </form>
   </div>
 
   <div class="todo-list__tasks">
-    <ul class="todo-list__tasks--item"></ul>
+    <input class="check-box" type="checkbox" name="task-item">
+
+    <ul class="todo-list__tasks--item">
+      <li>one...</li>
+    </ul>
+
+    <div class="todo-list__tasks--controls">
+      <span class="move">
+        <svg class="icon">
+          <use xlink:href="../assets/icons/sprite.svg#icon-menu2"></use>
+        </svg>
+      </span>
+      <span class="edit">
+        <svg class="icon">
+          <use xlink:href="../assets/icons/sprite.svg#icon-pencil1"></use>
+        </svg>
+      </span>
+      <span class="delete">
+        <svg class="icon">
+          <use xlink:href="../assets/icons/sprite.svg#icon-bin"></use>
+        </svg>
+      </span>
+    </div>
   </div>
 </div>
